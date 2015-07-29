@@ -7,3 +7,8 @@ mean [] = 0
 mean (x:xs) = mean' 1 x xs
     where mean' n acc [] = acc / n
           mean' n acc (y:ys) = mean' (n + 1) (acc + y) ys
+
+mirror :: [a] -> [a]
+mirror xs = xs ++ (invert xs)
+    where invert [] = []
+          invert (y:ys) = (invert ys) ++ [y]
