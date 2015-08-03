@@ -1,0 +1,5 @@
+# vim temporary files
+.*.swp
+# compiler artefacts
+*.o
+*.hi
